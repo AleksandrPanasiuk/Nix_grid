@@ -1,0 +1,197 @@
+.one_two{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+.one{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: gray;
+    border: 2px solid black;
+}
+.two{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: sienna;
+    border: 2px solid black;
+    opacity: 50%;
+}
+
+
+.first_line{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    justify-items: end;
+}
+.first_line div{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    text-align: center;
+    border: 1px solid black;
+}
+.second_line{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    justify-items: start;
+
+}
+.second_line div{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    text-align: center;
+    border: 1px solid black;
+}
+.third_line{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    justify-items: center;
+
+}
+.third_line div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+}
+.fourth_line{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: stretch;
+    align-items: center;
+}
+.fourth_line div{
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.second_task{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 100px);
+}
+.second_task div{
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.Dd{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: chocolate;
+}
+.Aa{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: purple;
+}
+.Cc{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: chocolate;
+}
+.Ee{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.Bb{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    background-color: purple;
+}
+.Ff{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.Gg{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-color: lawngreen;
+}
+.Ii{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.Hh{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-color: lawngreen;
+}
+.third_task{
+    display:grid;
+    grid-gap: 25px;
+    grid-template: 1fr / repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
+}
+.Aaa, .Bbb, .Ccc,.Ddd,.Eee,.Fff,.Ggg,.Hhh,.Iii,.Kkk,.Lll,.Mmm,.Jjj{
+    background-color: gray;
+    border:1px solid black;
+    text-align: center;
+}
+.Aaa{
+    grid-column: span 2;
+}
+.Ggg{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.Kkk{
+    grid-column: span 3;
+}
+
+.fourth_task{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;
+    grid-template-areas:
+       "A A . B"
+       "C D D D"
+       "C D D D";
+}
+.fourth_task div{
+    background-color: darkslateblue;
+    border: 1px solid black;
+    padding: 20px;
+}
+.Aaaa{
+    grid-area: A;
+}
+.Bbbb{
+    grid-area: B;
+}
+.Cccc{
+    grid-area: C;
+}
+.Dddd{
+    grid-area: D;
+}
+.big_D{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-template-rows: repeat(3, 1fr );
+}
+.big_D div{
+    background-color: gray;
+    padding: 20px;
+}
+.Eeee{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.Ffff{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.Gggg{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
